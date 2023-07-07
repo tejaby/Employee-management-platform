@@ -46,7 +46,7 @@ function Form() {
 
   const onSubmit = async (data) => {
     const res = await crearEmpleado(data);
-    toast.success("Successfully toasted!");
+    toast.success("Creado!");
     console.log(res);
   };
 
