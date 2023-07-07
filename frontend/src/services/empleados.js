@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const crearEmpleado = async (data) => {
   try {
-    const res = await axios.post("http://localhost:8000/api/empleados", data);
+    const res = await axios.post("http://localhost:8000/api/empleados/", data);
     return res;
   } catch (e) {
     console.log(e);

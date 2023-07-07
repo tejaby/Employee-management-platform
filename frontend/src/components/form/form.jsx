@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { crearEmpleado } from "../../services/empleados";
 import "./form.css";
+import toast from "react-hot-toast";
 
 function Form() {
   const [name, setName] = useState("");
@@ -45,6 +46,7 @@ function Form() {
 
   const onSubmit = async (data) => {
     const res = await crearEmpleado(data);
+    toast.success("Successfully toasted!");
     console.log(res);
   };
 
